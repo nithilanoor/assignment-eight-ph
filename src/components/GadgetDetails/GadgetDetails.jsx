@@ -1,6 +1,7 @@
 import { useLoaderData, useParams } from "react-router-dom";
 import { MdOutlineShoppingCart } from "react-icons/md";
 import { FaRegHeart } from "react-icons/fa6";
+import { IoStar } from "react-icons/io5";
 
 const GadgetDetails = () => {
 
@@ -18,7 +19,7 @@ const GadgetDetails = () => {
                 <p className="text-white text-center">Explore the latest gadgets that will take your experience to the next level. From smart devices to <br /> the coolest accessories, we have it all!</p>
             </div>
 
-            <div className="card card-side bg-base-100 shadow-xl gap-4 mx-auto relative bottom-14 my-2 flex justify-center w-2/3">
+            <div className="card card-side bg-base-100 shadow-xl gap-4 mx-auto relative bottom-14 my-2 flex justify-center w-2/3 p-1">
                 <div className="">
                     <img className="w-full h-[500px] object-contain"
                         src={product_image}
@@ -35,9 +36,9 @@ const GadgetDetails = () => {
                     <ul className="text-gray-600 font-semibold my-2">
                         <li>{Specification}</li>
                     </ul>
-                    <h4 className="text-xl font-bold">Rating</h4>
-                    <div className="flex items-center gap-8">
-                        <h3>Starssss</h3>
+                    <h4 className="text-xl font-bold mb-1">Ratings </h4>
+                    <div className="flex items-center gap-2">
+                        <h3><IoStar /></h3>
                         <p className="bg-gray-200 rounded-xl px-2">{rating}</p>
                     </div>
                     <div className="flex gap-4 my-4">
