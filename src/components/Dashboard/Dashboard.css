@@ -1,0 +1,9 @@
+.active {
+    background-color: white;
+    color: rgb(149, 56, 226);
+}
+
+.normal{
+    background-color: rgb(149, 56, 226);
+    color: white;
+}
