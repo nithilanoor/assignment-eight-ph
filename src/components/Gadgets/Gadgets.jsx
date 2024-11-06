@@ -14,7 +14,7 @@ const Gadgets = () => {
     return (
         <div>
             <h2 className="text-3xl font-bold text-center">Explore Cutting-Edge Gadgets</h2>
-            <div>
+            <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-4 my-12 justify-center">
                 {
                     gadgets.map(gadget => <Gadget gadget={gadget} key={gadget.product_id}></Gadget>)
                 }
