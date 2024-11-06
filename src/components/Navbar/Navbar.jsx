@@ -1,7 +1,26 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import { FaRegHeart } from "react-icons/fa6";
 
 const Navbar = () => {
+
+    const location = useLocation();
+
+    const navbarBg = () => {
+        if (location.pathname === '/'){
+            return {
+                bgColor: 'bg-[#9538E2]',
+                textColor: 'text-white'
+            }
+        }
+        else{
+            return{
+                bgColor: 'bg-white',
+                textColor: 'text-[#9538E2]'
+            }
+        }
+    };
+
+    const {bgColor, textColor} = navbarBg();
 
     const links = <>
         <li><NavLink to="/">Home</NavLink></li>
@@ -10,7 +29,7 @@ const Navbar = () => {
     </>
 
     return (
-        <div className="navbar bg-[#9538E2]">
+        <div className={`${bgColor} navbar`}>
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -33,10 +52,10 @@ const Navbar = () => {
                         {links}
                     </ul>
                 </div>
-                <a className="btn btn-ghost text-xl font-bold text-white">Gadget Heaven</a>
+                <a className={`btn btn-ghost text-xl font-bold  ${textColor}`}>Gadget Heaven</a>
             </div>
             <div className="navbar-center hidden lg:flex">
-                <ul className="menu menu-horizontal px-1 text-white">
+                <ul className={`menu menu-horizontal px-1 ${textColor}`}>
                     {links}
                 </ul>
             </div>
@@ -47,7 +66,7 @@ const Navbar = () => {
                             <div className="indicator">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
-                                    className="h-5 w-5 text-white"
+                                    className={`h-5 w-5  ${textColor}`}
                                     fill="none"
                                     viewBox="0 0 24 24"
                                     stroke="currentColor">
@@ -69,7 +88,7 @@ const Navbar = () => {
                     <div className="dropdown dropdown-end">
                         <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
                             <div className="indicator">
-                                <p className="text-xl font-semibold text-white"><FaRegHeart /></p>
+                                <p className={`text-xl font-semibold  ${textColor}`}><FaRegHeart /></p>
                                 <span className="badge badge-xs indicator-item">0</span>
                             </div>
                         </div>

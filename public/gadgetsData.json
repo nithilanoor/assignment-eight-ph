@@ -1,0 +1,172 @@
+[
+    {
+        "product_id": "P001",
+        "product_title": "iPhone 14 Pro Max",
+        "product_image": "https://adminapi.applegadgetsbd.com/storage/media/large/iPhone-14-Pro-Space-Black-1138.jpg",
+        "category": "Phone",
+        "price": 1099.99,
+        "description": "Apple's latest flagship phone with a 6.7-inch OLED display, powerful A16 Bionic chip, and exceptional camera system.",
+        "Specification": [
+            "6.7-inch Super Retina XDR Display",
+            "A16 Bionic Chip",
+            "48MP Pro Camera System",
+            "5G Capable",
+            "128GB Storage"
+        ],
+        "availability": true,
+        "rating": 4.8
+    },
+    {
+        "product_id": "P002",
+        "product_title": "Samsung Galaxy S23 Ultra",
+        "product_image": "https://adminapi.applegadgetsbd.com/storage/media/large/Galaxy-S23-Ultra-Green-3380.jpg",
+        "category": "Phone",
+        "price": 1199.99,
+        "description": "The Galaxy S23 Ultra is packed with a 200MP camera, Snapdragon 8 Gen 2 chipset, and an AMOLED display.",
+        "Specification": [
+            "6.8-inch Dynamic AMOLED 2X Display",
+            "Snapdragon 8 Gen 2 Processor",
+            "200MP Main Camera",
+            "5000mAh Battery",
+            "128GB Storage"
+        ],
+        "availability": true,
+        "rating": 4.7
+    },
+    {
+        "product_id": "L001",
+        "product_title": "Apple MacBook Pro 14-inch (2023)",
+        "product_image": "https://www.techlandbd.com/image/catalog/Laptop/Apple/apple-macbook-pro-2023/apple-macbook-2023-pro-4.jpg",
+        "category": "Laptop",
+        "price": 1999.99,
+        "description": "Apple's MacBook Pro with the M2 Pro chip, offering unmatched performance for professionals and creators.",
+        "Specification": [
+            "14-inch Liquid Retina XDR Display",
+            "Apple M2 Pro Chip",
+            "16GB RAM",
+            "512GB SSD Storage",
+            "Up to 17 Hours Battery Life"
+        ],
+        "availability": true,
+        "rating": 4.9
+    },
+    {
+        "product_id": "A001",
+        "product_title": "Sony WH-1000XM5 Wireless Headphones",
+        "product_image": "https://adminapi.applegadgetsbd.com/storage/media/large/5318-55349.jpg",
+        "category": "Accessories",
+        "price": 379.99,
+        "description": "Sony's WH-1000XM5 offers industry-leading noise cancellation and premium sound quality for a superior audio experience.",
+        "Specification": [
+            "Noise Cancelling Technology",
+            "30 Hours Battery Life",
+            "Touch Sensor Controls",
+            "Voice Assistant Integration",
+            "Bluetooth 5.2"
+        ],
+        "availability": true,
+        "rating": 4.9
+    },
+    {
+        "product_id": "P005",
+        "product_title": "Xiaomi 13 Pro",
+        "product_image": "https://adminapi.applegadgetsbd.com/storage/media/large/Xiaomi-13-Pro-Ceramic-White-4073.jpg",
+        "category": "Phone",
+        "price": 949.99,
+        "description": "Xiaomi's flagship phone with a Leica-powered 50MP camera and a stunning AMOLED display.",
+        "Specification": [
+            "6.73-inch AMOLED Display",
+            "Snapdragon 8 Gen 2 Processor",
+            "50MP Leica Camera",
+            "5G Connectivity",
+            "256GB Storage"
+        ],
+        "availability": true,
+        "rating": 4.6
+    },
+    {
+        "product_id": "P006",
+        "product_title": "Sony Xperia 1 IV",
+        "product_image": "https://www.mobiledokan.co/wp-content/uploads/2022/03/Sony-Xperia-1-IV-Violet.jpg",
+        "category": "Phone",
+        "price": 1199.99,
+        "description": "Sony Xperia 1 IV is a premium smartphone designed for creators with a 4K OLED display and advanced camera features.",
+        "Specification": [
+            "6.5-inch 4K OLED Display",
+            "Snapdragon 8 Gen 1 Processor",
+            "12MP Triple Camera System",
+            "5000mAh Battery",
+            "256GB Storage"
+        ],
+        "availability": false,
+        "rating": 4.4
+    },
+    {
+        "product_id": "P003",
+        "product_title": "Google Pixel 8 Pro",
+        "product_image": "https://adminapi.applegadgetsbd.com/storage/media/large/Pixel-8-Pro-Bay-1840.jpg",
+        "category": "Phone",
+        "price": 899.99,
+        "description": "The Google Pixel 8 Pro offers an incredible camera system with AI-driven photography and a smooth OLED display.",
+        "Specification": [
+            "6.7-inch LTPO OLED Display",
+            "Google Tensor G3 Chipset",
+            "50MP Main Camera",
+            "5G Enabled",
+            "128GB Storage"
+        ],
+        "availability": true,
+        "rating": 4.6
+    },
+    {
+        "product_id": "L002",
+        "product_title": "Dell XPS 13 (2024)",
+        "product_image": "https://www.dell.com/wp-uploads/2024/01/Tributo-Platinum-v2.jpg",
+        "category": "Laptop",
+        "price": 1499.99,
+        "description": "Dell's XPS 13 delivers sleek design and powerful performance with the latest Intel i7 processor.",
+        "Specification": [
+            "13.4-inch 4K OLED Display",
+            "Intel Core i7-1365U Processor",
+            "16GB RAM",
+            "512GB SSD Storage",
+            "Up to 12 Hours Battery Life"
+        ],
+        "availability": true,
+        "rating": 4.7
+    },
+    {
+        "product_id": "P004",
+        "product_title": "OnePlus 11 5G",
+        "product_image": "https://adminapi.applegadgetsbd.com/storage/media/large/OnePlus-11-(3)-4957.jpg",
+        "category": "Phone",
+        "price": 749.99,
+        "description": "OnePlus 11 delivers top-tier performance with Snapdragon 8 Gen 2 and a 120Hz AMOLED display.",
+        "Specification": [
+            "6.7-inch AMOLED Display",
+            "Snapdragon 8 Gen 2 Processor",
+            "50MP Main Camera",
+            "5000mAh Battery",
+            "128GB Storage"
+        ],
+        "availability": true,
+        "rating": 4.5
+    },
+    {
+        "product_id": "A002",
+        "product_title": "Bose QuietComfort 45 Noise Cancelling Headphones",
+        "product_image": "https://www.custommacbd.com/cdn/shop/products/QC45_PDP_Ecom-Gallery-W02custommacbd.com.jpg?v=1647414595",
+        "category": "Accessories",
+        "price": 329.99,
+        "description": "Bose QuietComfort 45 offers top-tier comfort, sound quality, and effective noise cancellation for all-day listening.",
+        "Specification": [
+            "Noise Cancellation",
+            "24 Hours Battery Life",
+            "Comfortable Over-Ear Design",
+            "Bluetooth 5.1",
+            "Voice Assistant Support"
+        ],
+        "availability": true,
+        "rating": 4.8
+    }
+]
