@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
 
-const Gadget = ({ gadget }) => {
+const Gadget = ({ gadget}) => {
 
     const { product_id, product_image, product_title, price } = gadget;
 
+
     return (
-        <div className="card card-compact bg-base-100 w-96 shadow-xl border">
+        <div className="card card-compact bg-base-100 w-80 shadow-xl border">
             <div className="border border-gray-100 rounded-xl m-4">
                 <img className="w-full h-[180px] object-contain p-2"
                     src={product_image}

@@ -7,9 +7,13 @@ const Gadgets = () => {
 
     useEffect(() => {
         fetch('./gadgetsData.json')
-        .then(res => res.json())
-        .then(data => setGadgets(data))
-    }, [])
+            .then(res => res.json())
+            .then(data => setGadgets(data))
+    }, []);
+
+
+
+
 
     return (
         <div>

@@ -24,7 +24,9 @@ const Dashboard = () => {
                 status: "wishlist"
             })
         }
-    }
+    };
+
+    
 
 
     return (

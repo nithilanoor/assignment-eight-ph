@@ -12,6 +12,7 @@ import Dashboard from './components/Dashboard/Dashboard';
 import Stats from './components/Stats/Stats';
 import GadgetDetails from './components/GadgetDetails/GadgetDetails';
 import Cart from './components/Cart/Cart';
+import Wishlist from './components/Wishlist/Wishlist';
 
 
 const router = createBrowserRouter([
@@ -32,6 +33,14 @@ const router = createBrowserRouter([
       {
         path: 'dashboard',
         element: <Dashboard></Dashboard>
+      },
+      {
+        path: `cart`,
+        element: <Cart></Cart>
+      },
+      {
+        path: `wishlist`,
+        element: <Wishlist></Wishlist>
       },
       {
         path: 'stats',

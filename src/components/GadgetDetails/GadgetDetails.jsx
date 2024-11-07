@@ -1,7 +1,10 @@
-import { useLoaderData, useParams } from "react-router-dom";
+import { Link, useLoaderData, useParams } from "react-router-dom";
 import { MdOutlineShoppingCart } from "react-icons/md";
 import { FaRegHeart } from "react-icons/fa6";
 import { IoStar } from "react-icons/io5";
+import { useState } from "react";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const GadgetDetails = () => {
 
@@ -12,8 +15,48 @@ const GadgetDetails = () => {
 
     const { product_title, product_image, price, description, availability, Specification, rating } = gadget;
 
+    // add to cart
+    const [addToCart, setAddToCart] = useState([]);
+
+    const handleAddToCart = gadget => {
+        const newAddCart = [...addToCart, gadget]
+        setAddToCart(newAddCart);
+        console.log("added to cart")
+        toast('Item added to cart!', {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "dark",
+            });
+    };
+
+
+    // add to wishlist
+    const [addToWishlist, setAddToWishlist] = useState([]);
+
+    const handleAddToWishlist = gadget => {
+        const newAddCart = [...addToWishlist, gadget]
+        setAddToWishlist(newAddCart);
+        console.log("added to wishlist")
+        toast('Item added to wishlist!', {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "dark",
+            });
+    }
+
     return (
         <div>
+            <ToastContainer />
             <div className="bg-[#9538E2] space-y-4 p-6 py-16">
                 <h2 className="text-white text-3xl text-center font-bold">Product Details</h2>
                 <p className="text-white text-center">Explore the latest gadgets that will take your experience to the next level. From smart devices to <br /> the coolest accessories, we have it all!</p>
@@ -42,8 +85,8 @@ const GadgetDetails = () => {
                         <p className="bg-gray-200 rounded-xl px-2">{rating}</p>
                     </div>
                     <div className="flex gap-4 my-4">
-                        <button className="bg-[#9538E2] text-white font-bold rounded-full p-2 flex justify-center items-center gap-2 px-4">Add To Cart <MdOutlineShoppingCart /></button>
-                        <button className="font-bold bg-white border rounded-full p-1 px-3"><FaRegHeart/></button>
+                        <button onClick={handleAddToCart} className="bg-[#9538E2] text-white font-bold rounded-full p-2 flex justify-center items-center gap-2 px-4">Add To Cart <MdOutlineShoppingCart /></button>
+                        <button onClick={handleAddToWishlist} className="font-bold bg-white border rounded-full p-1 px-3"><FaRegHeart /></button>
                     </div>
                 </div>
             </div>

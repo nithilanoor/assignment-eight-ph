@@ -1,6 +1,6 @@
 import { BiSort } from "react-icons/bi";
 
-const Cart = () => {
+const Cart = ({}) => {
     return (
         <div className="flex justify-between items-centers my-12">
             <h3 className="text-3xl font-bold">Cart</h3>
