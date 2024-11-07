@@ -13,6 +13,7 @@ import Stats from './components/Stats/Stats';
 import GadgetDetails from './components/GadgetDetails/GadgetDetails';
 import Cart from './components/Cart/Cart';
 import Wishlist from './components/Wishlist/Wishlist';
+import Blog from './components/Blog/Blog';
 
 
 const router = createBrowserRouter([
@@ -35,8 +36,13 @@ const router = createBrowserRouter([
         element: <Dashboard></Dashboard>
       },
       {
-        path: `cart`,
-        element: <Cart></Cart>
+        path: 'blog',
+        element: <Blog></Blog>
+      },
+      {
+        path: 'cart',
+        element: <Cart></Cart>,
+        loader: () => fetch('/gadgetsData.json')
       },
       {
         path: `wishlist`,

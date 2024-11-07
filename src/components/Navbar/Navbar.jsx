@@ -26,7 +26,7 @@ const Navbar = () => {
         <li><NavLink to="/">Home</NavLink></li>
         <li><NavLink to="/stats">Statistics</NavLink></li>
         <li><NavLink to="/dashboard">Dashboard</NavLink></li>
-        {/* <li><NavLink to="/dashboard">Dashboard</NavLink></li> */}
+        <li><NavLink to="/blog">Blog</NavLink></li>
     </>
 
     return (

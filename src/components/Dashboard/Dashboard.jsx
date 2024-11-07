@@ -1,10 +1,12 @@
 import { useState } from "react";
 import './Dashboard.css';
-import { Link } from "react-router-dom";
 import Cart from "../Cart/Cart";
 import Wishlist from "../Wishlist/Wishlist";
 
+
 const Dashboard = () => {
+
+    
 
     // active btn
     const [isActive, setIsActive] = useState({

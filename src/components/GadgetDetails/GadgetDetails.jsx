@@ -2,9 +2,11 @@ import { Link, useLoaderData, useParams } from "react-router-dom";
 import { MdOutlineShoppingCart } from "react-icons/md";
 import { FaRegHeart } from "react-icons/fa6";
 import { IoStar } from "react-icons/io5";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Cart from "../Cart/Cart";
+import { addToStoredCartItems } from "../utility/addToDb";
 
 const GadgetDetails = () => {
 
@@ -16,6 +18,13 @@ const GadgetDetails = () => {
     const { product_title, product_image, price, description, availability, Specification, rating } = gadget;
 
     // add to cart
+
+
+    // const handleAddToCart = (id) => {
+    //     addToStoredCartItems(id);
+    // }
+
+
     const [addToCart, setAddToCart] = useState([]);
 
     const handleAddToCart = gadget => {
